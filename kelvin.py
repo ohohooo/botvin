@@ -9,12 +9,12 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 client = LineClient() 
-client._tokenLogin("EmtSwQkN3TjWRrT0wfa7.0LutO9fOymTF5KfIofqfDW.plBPA8v7fYD8hrTK09tzX+GoIgx5oByaZlHvEu9/9V0=")
+client._tokenLogin()
 
 profile, setting, tracer = client.getProfile(), client.getSettings(), LineTracer(client)
 offbot, messageReq, wordsArray, waitingAnswer = [], {}, {}, {}
 
-print client._loginresult()
+#print client._loginresult()
 
 wait = {
     'readPoint':{},
